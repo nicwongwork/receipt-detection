@@ -6,6 +6,8 @@ from paddleocr import PaddleOCR
 from PIL import Image
 from groq import Groq
 
+os.environ["OPENCV_VIDEOIO_PRIORITY_MSMF"] = "0"
+
 # 1. 初始化 PaddleOCR (建議加上 cache)
 @st.cache_resource
 def load_ocr_model():
