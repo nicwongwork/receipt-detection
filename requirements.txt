@@ -1,5 +1,7 @@
+streamlit
 opencv-python-headless
 paddlepaddle
 paddleocr
 groq
-streamlit
+# 加上這個來確保依賴穩定
+shapely
