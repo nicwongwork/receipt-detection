@@ -1,0 +1,38 @@
+# --- Python 相關 ---
+__pycache__/
+*.py[cod]
+*$py.class
+venv/
+env/
+.env
+.venv
+build/
+dist/
+*.egg-info/
+
+# --- Streamlit 相關 ---
+.streamlit/config.toml
+.streamlit/secrets.toml
+# 如果你 local 有行 streamlit，唔好上傳 browser 殘餘
+.ipynb_checkpoints/
+
+# --- PaddleOCR 相關 (重點) ---
+# PaddleOCR 會自動下載模型到隱藏資料夾，記得排除
+.paddleocr/
+inference/
+# 如果你有下載特定模型夾放在目錄下，也請排除或使用 Git LFS
+*.pdmodel
+*.pdiparams
+*.pdiparams.info
+
+# --- 作業系統與開發工具 ---
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+*.log
+
+# --- 資料庫相關 (如果你有 MySQL 或 SQLite) ---
+*.db
+*.sqlite3
+chroma_db/
